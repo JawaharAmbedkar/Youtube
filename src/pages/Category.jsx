@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 import Navbar from '../components/navbar';
 import Sidebar from '../components/Sidebar';
 
-const API_KEY = 'AIzaSyBnLEBoOr0dhOMOfiVDNi_x3OtNgoa7BZE';
+const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
+
 
 const timeAgo = (date) => {
   const seconds = Math.floor((new Date() - new Date(date)) / 1000);
